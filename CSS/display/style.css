@@ -1,0 +1,24 @@
+/* a{
+    height: 100px;
+    width: 200px;
+    display: block;
+    font-size: 100px;
+} */
+ nav{
+    border: 2px solid black;
+    padding: 30px;
+    background-color: bisque;
+ }
+ ul{
+    text-align: end;
+ }
+
+ li{
+    display: inline;
+    margin: 20px;
+    font-size: 30px;
+    border: 4px solid black;
+    background-color: beige;
+
+ }
+ 

@@ -1,0 +1,55 @@
+*{
+    height: 1000vh;
+    /* so that the web page can be scrolled */
+}
+.boxes{
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+    margin: 100px auto;
+    
+    /* this margin 100px ,is only for top and bottom, and auto is to make the box be 
+    in the middle/center */
+
+}
+.box{
+    height: 100px;
+    width: 100px;
+}
+.red{
+    background-color: red;
+    position: relative; 
+    left: 200px;
+    /* this left is put to move the red box towards right 200px */
+    top: 100px;
+    /* top is when the box shifts down 100px */
+
+}
+.yellow{
+    background-color: yellow;
+    position: absolute;
+    /* the blue box disappears, becauseyellow is a part of html, ie root element. yellow box is in 
+    the top, and the blue box is behind the yellow box */
+    right: 200px;
+    /* the yellow box moves towards right out of the big box, and the blue box can be seen*/
+    z-index: 1;
+}
+.blue{
+    background-color: blue;
+    position: fixed; 
+    /* the green colour cant be seen, the blue will be fixed, when scrolled a bit green box can be seen */
+    right: 100px;
+    bottom:50px; 
+    /* it gets fixed, does not move even if the website is scrolled */
+    z-index: 2;
+    /* for when the boxes are overlappig which is not wanted, it would overlap the yellow sice it was 
+    given 2, and priority is given */
+
+}
+.green{
+    background-color: green;
+    position:sticky;
+    top: 100px;
+    /* it stays, but when the paren ie the bigger box is moved and when it touches the bottom the it too
+    moves */
+}
