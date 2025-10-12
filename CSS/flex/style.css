@@ -1,0 +1,15 @@
+.container{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse; /* by default it is always row*/
+    flex-wrap: wrap;
+    gap: 100px;
+    flex-flow: row wrap; 
+    /* flex flow is when flex direction is not mentioned , it is an alternate option*/
+    justify-content: center;
+    align-items: center;
+    
+}
+
