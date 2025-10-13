@@ -1,15 +1,28 @@
 .container{
     height: 500px;
-    width: 500px;
-    border: 2px solid black;
+    width: 800px;
+    border: 5px solid black;
     display: flex;
     flex-direction: column-reverse; /* by default it is always row*/
     flex-wrap: wrap;
     gap: 100px;
     flex-flow: row wrap; 
     /* flex flow is when flex direction is not mentioned , it is an alternate option*/
-    justify-content: center;
+    justify-content: center;  
     align-items: center;
     
+}
+#box-1{
+    flex-shrink:3;  /*makes the box shrink in size*/
+}
+#box-3{
+    flex-grow: 6;  /*makes the box bigger*/
+}
+#box-4{
+    flex-basis: 100px;
+    flex: 10 20 200px;
+}
+.box{
+    border: 3px solid salmon;
 }
 
