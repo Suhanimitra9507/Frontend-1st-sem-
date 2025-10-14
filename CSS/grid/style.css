@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 700px;
+    border: 2px solid black;
+    display: grid; /*works from top to bottom*/
+    row-gap: 20px;
+    grid-template-columns: 100px 200px 300px; 
+    column-gap: 20px;
+    justify-content: center;  /*gets centered, the whole thingy*/
+    align-items: start; /*makes no change since already in center*/
+    
+}
+.box{
+    border: 6px solid rebeccapurple;
+    padding: 12px;
+}
